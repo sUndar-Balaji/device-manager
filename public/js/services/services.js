@@ -5,31 +5,31 @@ angular.module("services", [])
 
 		deviceOperations.getAllDevices = function () {
 
-			return $http.get ("http://localhost:3000/devices");
+			return $http.get ("https://shielded-brook-22535.herokuapp.com/devices");
 
 		};
 
 		deviceOperations.addDevice = function (deviceDetails) {
 
-			return $http.post ("http://localhost:3000/devices/new", deviceDetails);
+			return $http.post ("https://shielded-brook-22535.herokuapp.com/devices/new", deviceDetails);
 
 		};
 
 		deviceOperations.updateDevice = function (deviceDetails) {
 
-			return $http.post ("http://localhost:3000/devices/update", deviceDetails);
+			return $http.post ("https://shielded-brook-22535.herokuapp.com/devices/update", deviceDetails);
 
 		};
 
 		deviceOperations.removeDevice = function (deviceId) {
 
-			return $http.get ("http://localhost:3000/devices/remove/" + deviceId);
+			return $http.get ("https://shielded-brook-22535.herokuapp.com/devices/remove/" + deviceId);
 
 		};
 
 		deviceOperations.deviceDetails = function (deviceId) {
 
-			return $http.get ("http://localhost:3000/devices/" + deviceId);
+			return $http.get ("https://shielded-brook-22535.herokuapp.com/devices/" + deviceId);
 
 		};
 

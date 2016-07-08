@@ -6,7 +6,7 @@ var upload = multer ();
 
 
 //DB Connection
-mongoose.connect ("mongodb://localhost:27017/devices", function (err) {
+mongoose.connect ("mongodb://shielded-brook-22535.herokuapp.com/devices", function (err) {
 
 	if (err) {
 		console.log ("error", err);

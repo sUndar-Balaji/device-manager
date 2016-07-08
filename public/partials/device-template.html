@@ -1,0 +1,12 @@
+<div class = "col-md-2 device">
+	<h3>
+		{{details.name}}
+	</h3>
+	<p>
+		model - {{details.model}}
+	</p>
+	<div class = "actions">
+		<a  class = "update" ui-sref = "app.devices.update({id: details._id})"><span class = "glyphicon glyphicon-edit"></span></a>
+		<a  class = "remove" ng-click = "removeDevice(details._id)"><span class = "glyphicon glyphicon-remove"></span></a>
+	</div>
+</div>

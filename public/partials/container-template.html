@@ -1,0 +1,14 @@
+<div class = "col-md-10 container-component">
+	<h2>
+		Available Devices
+	</h2>
+	<div ng-if = "devices.length === 0">
+		No Devices Found.Click add button to include new devices.
+	</div>
+	<div ng-repeat = "device in devices" class = "devicesContainer">
+		<device details = "device" delete-device = "deleteDevice" />	
+	</div>
+	<a ui-sref = "app.devices.add" class = "addDevice">
+		<span class = "glyphicon glyphicon-plus"></span>
+	</a>
+</div>

@@ -1,0 +1,18 @@
+<div class = "col-md-6 addNewDevices">
+	<h2>
+		Update Device Details
+	</h2>
+	<form ng-submit = "updateDeviceDetail()">
+		<div class = "form-group col-md-12">
+			<label for = "deviceName">Name</label>
+			<input type = "text" id = "deviceName" class = "form-control" name = "deviceName" ng-model = "device.deviceName" />
+		</div>
+		<div class = "form-group col-md-12">
+			<label for = "deviceModal">Modal</label>
+			<input type = "text" id = "deviceModal" class = "form-control" name = "deviceModal" ng-model = "device.deviceModal" />
+		</div>
+		<div class = "form-group actions">
+			<button type="submit" class="btn btn-default">Submit</button>
+		</div>
+	</form>
+</div>

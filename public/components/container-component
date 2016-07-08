@@ -1,0 +1,10 @@
+angular.module ("components", [])
+	.directive ("containerComponent", function () {
+
+		return {
+
+			
+
+		};
+
+	});
